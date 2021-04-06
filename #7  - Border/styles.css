@@ -1,0 +1,61 @@
+/* Border 
+
+Border es la linea que rodea la cajam es decir, lo que va a continuación del padding
+
+Lo que estaría entre el padding y el margin sería el border y el outline
+
+border tambien es un shorthand
+
+Las propiedades de los bordes son:
+
+    - width
+    - style
+    - color
+
+Existen bastantes combinaciones
+
+    border-width: 2px; (top right bottom left)
+    border-style: solid dotted; (X Y)
+    border-color: red blue green; (X Y bottom)
+    border-width: 2px 3px 4px 5px; (top right bottom left)
+
+
+border-width
+    px|em|rem|%|....
+
+border-style
+    none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+    *Estas medidas dependen del navegador*
+    thick (ancho)
+    medium (medio)
+    thin (fino)
+        
+border-color
+    css native|rgb|rgba|hsl|hsla|hexadecimal|transparent
+
+border-top-(width | style | color)
+border-right-(width | style | color)
+border-bottom-(width | style | color)
+border-left-(width | style | color)
+
+*/
+
+.box-1, .box-2 {
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+}
+
+.box-1 {
+    background-color: yellowgreen;
+    border: 100px solid red;
+    border-top-width: 200px;
+    border-top-color: transparent;
+}
+
+.box-2 {
+    background-color: dodgerblue;
+    border-left-width: 5px;
+    border-left-style: dotted;
+    border-left-color: blue;
+}

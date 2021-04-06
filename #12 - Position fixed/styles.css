@@ -1,0 +1,35 @@
+/*  
+
+Position fixed
+
+El valor relative hace que el elemento de coloque respecto al viewport (el espacio visible en la pantalla)
+
+El elemento no conserva su espacio en el flujo
+
+Si el elemento no tiene dimensiones declaradas, sus dimensiones se ajustarán al contenido
+
+Su punto de referencia no se modifica aunque se mueva el elemento
+
+Cuando hacemos scroll, el elemento no se moverá, se queda fijado
+
+*/
+
+body {
+    padding-top: 5em;
+}
+
+.menu {
+    background-color: dodgerblue;
+    color: white;
+    padding: .5em;
+    font-size: 2em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+}
+

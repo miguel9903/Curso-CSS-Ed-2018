@@ -1,0 +1,44 @@
+/* Margin y padding
+
+Margin: Es la separación entre una caja y las cajas adyacentes
+Padding: Es la seperación entre el contenido y su borde
+
+margin y padding son un shorthand, es decir, propiedades
+acortadas que engloban otras propiedades
+
+    - margin-top
+    - margin-right 
+    - margin-bottom 
+    - margin-left 
+
+    margin 1em; (top right bottom left)
+    margin 1em 2em; (Y X)
+    margin 1em 2em; 3em (Y X bottom)    
+    margin 1em 2em 3em 4em; (top right bottom left)
+
+    El el caso de padding, se aplica exactamente igual
+
+*/
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    margin: 1em 2em 3em 4em;
+} 
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    border: 2px solid blue;
+    padding: 1em 2em 3em 4em;
+} 
+
+.box-3 {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: 2px solid red;
+}
+

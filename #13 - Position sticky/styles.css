@@ -1,0 +1,41 @@
+/*  
+
+Position sticky
+
+Es una mezcla entre relative y fixed
+
+El elemento conserva su espacio en el flujo
+
+Si el elemento no tiene dimensiones declaradas, sus dimensiones se ajustarán al contenido
+
+Su punto de referencia no se modifica aunque se mueva el elemento
+
+Cuando hacemos scroll, el elemento no se moverá, se queda fijado
+
+El elemento se va a comportar como position relative hasta que llegue a la posición que le indiquemos
+Por ejemplo, si colocamos top: 20px, significa que cuando el elemento esté a 20px del top, automáticamente
+va a cambiar a position fixed
+
+*/
+
+.slide {
+    height: 300px;
+    background-color: greenyellow;
+    font-size: 3em;
+    text-align: center;
+    line-height: 6em;
+}
+
+.menu {
+    background-color: dodgerblue;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    margin: 0;
+}

@@ -1,0 +1,38 @@
+/*
+
+Position es la propiedad que nos permite modificar el flujo del HTML
+
+Los valores de position son:
+
+    - static (por defecto)
+    - relative
+    - absolute
+    - fixed
+    - sticky
+
+Al tener un elemento posicionado, podemos moverlo en los 3 ejes::after
+
+    - top: Podemos mover el elemento en relación a la parte superior
+    - right: Podemos mover el elemento en relación a la parte derecha
+    - bottom: Podemos mover el elemento en relación a la parte inferior
+    - left: Podemos mover el elemento en relación a la parte izquierda
+    - z-index: Podemos mover el elemento en el eje z
+
+Fulo HTML: Es el orden en el que aparecen los elementos en el documento
+Espacio: Es el espacio que ocupa un elemento en el documento, es decir, 
+         el espacio que reserva el navegador para cada uno de los elementos
+
+*/
+
+.title {
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+.parrafo-1 {
+    display: none;
+}

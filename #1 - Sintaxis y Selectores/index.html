@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 01</title>
+
+    <!-- Insertar CSS en la cabecera. No es recomendable, salvo que tengamos una sola página
+    o para pruebas 
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+
+    Estilos en linea: No recomendados para estilos estáticos, solo para estilos que se tienen 
+    que calcular en tiempo real con javascript por ejemplo
+        <h1 style="color: blue;">Soy un encabezado principal</h1>
+
+
+    Trayendo una hoja de estilos externa, la forma más recomendada para poder reutilizar el 
+    código
+        <link rel="stylesheet" href="styles-dist.css">
+
+    Importando estilos con la regla @import. Esta forma no se recomienda, para evitar
+    posibles fallos
+        <style>
+            @import url('styles-dist.css');
+        </style>
+    -->
+
+    <link rel="stylesheet" href="styles-dist.css">
+</head>
+<body>
+    <h1>Soy un encabezado principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam quam non at molestiae velit cum, aliquam optio hic perferendis aperiam enim minima nesciunt nisi vero doloremque ducimus temporibus dicta! Provident nisi alias totam tempora. Earum rerum eos modi sapiente impedit illo, voluptate labore necessitatibus debitis. Optio nostrum facilis nam.</p>
+    
+    <h1 class="title">Soy un encabezado principal</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam quam non at molestiae velit cum, aliquam optio hic perferendis aperiam enim minima nesciunt nisi vero doloremque ducimus temporibus dicta! Provident nisi alias totam tempora. Earum rerum eos modi sapiente impedit illo, voluptate labore necessitatibus debitis. Optio nostrum facilis nam.</p>
+
+    <h1 id="title">Soy un encabezado principal</h1>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam quam non at molestiae velit cum, aliquam optio hic perferendis aperiam enim minima nesciunt nisi vero doloremque ducimus temporibus dicta! Provident nisi alias totam tempora. Earum rerum eos modi sapiente impedit illo, voluptate labore necessitatibus debitis. Optio nostrum facilis nam.</p>
+
+    <a class="rojo verde" href="">Enlace 1 rojo verde</a>     
+    <a class="rojo" href="#">Enlace 2 rojo</a>        
+    <a class="verde" href="#">Enlace 3 verde</a>   
+    <a class="verde rojo" href="#">Enlace 4 verde rojo</a>     
+    
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+    <h2>Otro subtitulo</h2>
+    <h3>Otro subtitulo más</h3>
+    <h3>Otro subtitulo más</h3>
+    <div>
+        <p>
+            Lorem ipsum dolor, <span>SOY UN SPAN</span> sit amet consectetur adipisicing elit. Soluta rem debitis aspernatur doloremque qui voluptas facere earum, maiores ex quae.
+        </p>
+        <span>OTRO SPAN</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Border 
+
+Outline es la linea que rodea la caja entre el borde y el margin
+
+outline tambien es un shorthand
+
+Las propiedades de outline son:
+
+    - width
+    - style
+    - color
+    - offset
+
+Existen bastantes combinaciones
+
+    outline-width: 2px; (top right bottom left)
+    outline-style: solid dotted; (X Y)
+    outline-color: red blue green; (X Y bottom)
+    outline-width: 2px 3px 4px 5px; (top right bottom left)
+    outline-offset: +-px | em | rem ...
+
+*/
+
+.img-box {
+    width: 90%;
+    margin: 2em auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    border: 5px solid lightcoral; 
+    outline: 5px solid dodgerblue;
+    outline-offset: -40px;
+}
+
+.text {
+    position: absolute;
+    color: white;
+}

@@ -1,0 +1,62 @@
+/* Especificidad, herencia y cascada 
+
+
+Herehcia: Se aplica con el valor inherit y obliga al elemento a
+          heredar la propiedad de su elemento mas cercado
+
+Cascada: Es el orden en el que se aplican los estilos al leer
+         el CSS. Los estilos que vienen después sobreescriben
+         a los anteriores
+
+Especificidad: Es el peso que tiene un selector cuando se 
+         presenta un conflicto de estilos
+
+         La w3c divide la expecificidad en:
+
+            - Etiquetas             ------------> 0 0 0 1
+            - Clases y pseudoclases ------------> 0 0 1 0
+            - ID                    ------------> 0 1 0 0
+            - Estilos en linea      ------------> 1 0 0 0
+            - Important             ------------> Le gana a todo!
+
+La especificidad entra en juego cuando hay conflictos de estilo
+y no se pueden resolver por cascada.  La especificidad gana a la cascada,
+pero, en el caso de que los selectores sean iguales, no se tiene en 
+cuenta la especificidad. 
+
+Tener 2 elementos con !importanr es lo mismo que si los dos no
+los tuvieran
+
+Orden en el que se resuelven los conflictos de estilo:
+    important ---> Especificiddd ---> Cascada
+*/
+
+
+#parrafo {
+    color: blueviolet;
+}
+
+.parrafo {
+    color: red;
+}
+
+a {
+    color: inherit;
+}
+
+.parrafo-2 {
+    color: black !important;
+}
+
+/* p {
+    color: green !important;
+} */
+
+#parrafo-3 {
+    color: blueviolet;
+}
+
+.parrafo-3 {
+    color: dodgerblue;
+}
+

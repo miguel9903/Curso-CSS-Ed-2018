@@ -1,0 +1,127 @@
+/* Metodología BEM (Block Element Modifier) 
+
+Una metodología en CSS es una serie de consejos para estructurar
+nuestras clases de forma sencilla, escalable y reutilizable
+
+BEM es una de las metodologías mas utilizadas en el mundo
+
+Su nombre proviene de las siglas Block, Element, Modifier
+
+    - Block: Es cualquier elemento autónomo y aislado de nuestro documento.
+             Ej: Un menú, una galería, un formulario, etc.
+    - Element: Es cada uno de los elementos del bloque. Ej: Un link, una foto,
+             un campo de texto, etc.
+    - Modifier: Cuando un bloque se repite en otro lugar de nuestra web pero
+            con alguna modificación. Ej: El color de un texto, tamaño de 
+            una fuente, etc.
+            
+            
+----------------- Sintaxis de BEM -----------------       
+
+Los bloques se suelen denominar con una sola palabra o con dos palabras
+separadas por un guión si puede existir conflictos de estilos
+
+Ej: 
+    .menu / .main-menu
+    .gallery / .main-gallery
+
+Los elementos se nombran con el nombre del bloque al que pertenecen y
+su nombre seguido de dos guiones bajos __
+
+Ej:
+    .menu__item / main-menu__link
+    .gallery__img / main-gallery__item
+
+Los modificadores se nombran con el nombre del bloque al que pertenecen y
+su modificador seguido de dos guiones medios --
+
+Ej:
+    .menu__item--active
+    .gallery__item--special
+
+*/
+
+
+.main-title {
+    text-align: center;
+}
+
+.header {
+    height: 50px;
+    background-color: lightblue;
+}
+
+.main {
+    height: 600px;
+    background-color: lightseagreen;
+}
+
+.footer {
+    height: 200px;
+    background-color: lightsalmon;
+}
+
+/* 
+
+Forma incorrecta de aplicar estilos
+
+nav {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: dodgerblue
+} */ 
+
+
+
+/* Usando BEM */
+
+nav {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-menu__item {
+    text-transform: uppercase;
+}
+
+.main-memu__link {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.main-memu__link--active {
+    color: blue;
+    font-weight: bold;
+}

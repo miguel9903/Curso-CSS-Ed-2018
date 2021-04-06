@@ -1,0 +1,54 @@
+ /*  Box model 
+ 
+ En la web todo son cajas y la forma en la que el navegador las dibuja
+ se le conoce como LAYOUT
+
+ Las propiedades principales de cda una de estas cajas son: ancho(width)
+ y height(alto)
+ 
+Existen dos tipos de elementos en HTML: elementos en linea(inline) y
+de bloque(block). Estas propiedades se puedenn modificar con el 
+atributo display
+
+    - Elementos inline:
+        Son elementos que solo ocupan su contenido
+        No se les puede modificar ni su alto ni su ancho 
+
+     - Elementos block:
+        Son elementos que ocupan todo el ancho disponible
+        Se les puede asignar ato y ancho 
+
+ */
+
+ h1 {
+     background-color: lightblue;
+     height: 150px;
+     width: 100px;
+ }
+
+ h2 {
+     background-color: purple;
+     width: 100px;
+ }
+
+ a {
+     background-color: lime;
+     width: 300px;
+     height: 300px;
+ }
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background-color: lime;
+    padding: 10px;
+    border: 5px solid dodgerblue; /* Sus dimensiones cuentan para el tamaño total */
+    margin: 10px;
+    outline: 5px solid blue; /* Sus dimensiones no cuentan para el tamaño total */
+}
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
