@@ -1,0 +1,110 @@
+/*
+
+Pseudoclases I
+
+Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector
+
+Funcionan con todos los selectores CSS
+
+No están atados a ningún elemento 
+
+Sintaxis:
+
+    selector:pseudo-class {
+        styles...
+    }
+
+Dynamic
+    :link (links) - Link no visitado
+    :visited (links) - Link visitado
+    :active (links) - El momento del click
+    :hover - Al poner el mouse sobre el elemento
+    :focus - Cuando el elemento tiene el foco
+Target
+    :target - Elemento es objetivo de un marcador o ancla
+Language
+    :lang() - Elemento que contiene el atributo lang que especifiquemos
+
+
+*/
+
+.link {
+    display: block;
+}
+
+.link:link {
+    color: red;
+}
+
+.link:active {
+    background-color: green;
+    color: white;
+}
+
+.link:visited {
+    color: dodgerblue;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em;
+    background-color: dodgerblue;
+    color: white;
+    margin: 1em 0;
+    border-radius: .3em;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.title:hover {
+    background-color: blueviolet;
+    color: white;    
+}
+
+.button:hover {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid;
+}
+
+.input:focus {
+    background-color: green;
+    color: white;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.text {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+
+.text:target {
+    padding-top: 50px;
+}
+
+.span {
+    display: block;
+}
+
+.span:lang(en) {
+    color: red;
+}
+
+.span:lang(es) {
+    color: blue;
+}

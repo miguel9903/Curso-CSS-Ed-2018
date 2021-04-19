@@ -1,0 +1,49 @@
+/*  
+
+Propiedad display
+
+Nos permite definir cómo se comporta una caja respecto a las cajas adyacentes
+
+De forma natural, existen elementos en línea y elementos en bloque
+
+    - inline: El elemento ocupa solo lo que ocupe su contenido y no admite
+              dimensiones (width y height). Admite margin y padding pero
+              no afecta el flujo vertical, solo al horizontal
+
+    - block: El elemento ocupa todo el ancho disponible y admite
+              dimensiones (width y height). Admite margin y padding y 
+              afecta el flujo vertical
+
+Los valores de la propiedad display son::after
+
+    - inline: Establece que la caja se comporte como un elemento en línea
+    - block:  Establece que la caja se comporte como un elemento en bloque
+    - inline-block: Hace que el elemento se comporte como un elemento inline
+                    pero acepta las propiedades width y height
+    - none: Oculta el elemento pero se sigue renderizando. No se conserva
+            su espacio en el flujo
+
+    - table: Imita el comportamiento de una tabla
+    - list-item: Imita el comportamiento de una lista
+
+
+    CSS3
+
+    - flex: Maquetar componentes
+    - grid: Mauqetar layout
+
+
+*/
+
+.inline {
+    background-color: green;
+    display: inline-block;
+    margin-bottom: 2em;
+    height: 100px;
+    padding: 2em;
+}
+
+.block {
+    background-color: yellow;
+    /*display: none;*/
+}

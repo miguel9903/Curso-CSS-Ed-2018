@@ -1,0 +1,55 @@
+/*  
+
+Pseudoelementos
+
+Se utiliza para dar estilos a partes específicas de un elemento
+
+Sintaxis:
+
+    selector::pseudo-element {
+        styles..
+    }
+
+Existen 5 pseudolementos:
+
+    - ::first-line (Elementos en bloque)
+    - ::first-letter (Elementos en bloque)
+    - ::selection (Retirado de la especificación)
+
+    - ::before
+    - ::after
+
+     Para los pseudoelementos ::afet y ::before, se debe tener
+     en cuenta los siguiente:
+
+        - La propiedad content es obligatoria
+        - Son elementos en línea por defecto
+        - Son hijos del elemento al que pertenecen
+        - Son elementos que no existen en el HTML y, por consecuencia,
+          no existen en el DOM
+
+*/
+
+.title::first-letter {
+    color: red;
+    font-size: 3em;
+}
+
+.text::first-line {
+    color: blue;
+}
+
+.text::selection {
+    color: white;
+    background-color: lime;
+}
+
+.dolar::before, .dolar::after  {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    display: block;
+}
+
+

@@ -1,0 +1,24 @@
+/*  
+
+Textos y tipografías III (Google Fonts)
+
+*/
+
+/*
+.title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.paragraph {
+    font-family: 'Montserrat', sans-serif;
+}
+*/
+
+@font-face {
+    src: url('aseets/fonts/OpenSansCondensed-Light.ttf');
+    font-family: 'myfont';
+}
+
+.title {
+    font-family: myfont, serif;
+}

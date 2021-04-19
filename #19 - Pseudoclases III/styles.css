@@ -1,0 +1,134 @@
+/*
+
+Pseudoclases III
+
+Structural
+    :root - Representa la raiz del documento (html) usando una pseudoclase tenemos más especificidad que si usáramos html
+    :empty - Esta pseudoclase se aplica para los elementos vacios, es decir, etiquetas que no tienen contenido
+    
+    -child
+        :first-child - Selecciona al primer hijo (independientemente del tipo de etiqueta)
+        :last-child - Selecciona al ultimo hijo (independientemente del tipo de etiqueta)
+        :nth-child(n) - Selecciona al hijo n(independientemente del tipo de etiqueta)
+        :nth-last-child(n) Selecciona al hijo n empezando a contar desde el último (independientemente del tipo de etiqueta)
+        :only-child Selecciona al hijo unico(independientemente del tipo de etiqueta)
+    
+    -type
+        :first-of-type
+        :last-of-type
+        :nth-of-type()
+        :nth-last-of-type()
+        :only-of-type
+    Valores posibles:
+        odd - Impares
+        even - Pares
+        numeros enteros - 2,3,4...
+        equaciones (1n,3n,4n+1,n+4,...)
+            n es un multiplicador va de 0 hasta que se quede sin elementos
+    
+Negation
+    :not() - Selecciona al elemento que no cumpla la condición, se puede poner cualquier selector salvo otro :not
+
+*/
+
+/*
+.paragraph {
+    background-color: lightblue;
+    padding: .5em;
+}
+
+.paragraph:empty {
+    padding: 0;
+    all: unset;
+}
+*/
+
+/* El primer hijo que tiene la clase paragraph se le aplicará el color de fondo */
+/* 
+.paragraph:first-child { 
+    background-color: green;
+}
+
+.paragraph:last-child {
+    background-color: dodgerblue;
+}
+*/
+
+/*
+.paragraph:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+.paragraph:nth-child(even) {
+    background-color: greenyellow;
+}
+*/
+
+/*
+.paragraph:nth-child(5) {
+    background-color: dodgerblue;
+}
+*/
+
+/*
+.paragraph:nth-child(3n) {
+    background-color: blueviolet;
+}
+*/
+
+/*
+.paragraph:nth-child(3n+1) {
+    background-color: lightcoral;
+}
+*/
+
+/*
+.paragraph:nth-child(n+4) {
+    background-color: greenyellow;
+}
+*/
+
+/*
+.paragraph:nth-last-child(4) {
+    background-color: hotpink;
+}
+*/
+
+/*
+.paragraph:nth-last-child(n+3) {
+    background-color: indigo;
+}
+*/
+
+/*
+.paragraph:only-child {
+    background-color: lawngreen;
+}
+*/
+
+/* Con .paragraph:nth-child(3) se selecciona el tercer hijo que tenga la clase paragraph,
+   independientemenete si hay hijos anteriores que NO son párrafos 
+   
+   Con .paragraph:nth-of-type(3) se selecciona el tercer elemento que tenga la clase paragraph
+*/
+/*
+.paragraph:nth-of-type(3) {
+    background-color: lawngreen;
+}
+
+.paragraph:first-of-type {
+    background-color: lightseagreen;
+}
+*/
+
+/* Se aplica a todos los elementos que tengan la clase .paragraph pero que NO
+   sean un div */
+/*
+   .paragraph:not(div) {
+    background-color: lightcoral;
+}
+*/
+
+.paragraph:not(.first) {
+    background-color: mediumorchid;
+}
