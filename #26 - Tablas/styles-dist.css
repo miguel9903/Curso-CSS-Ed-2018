@@ -1,0 +1,1 @@
+.table{}.table,.table__data,.table__head{border:1px solid dodgerblue}.table__data{text-align:center;background-color:greenyellow;empty-cells:hide}.table__data,.table__head{padding:5px}.table-container{overflow-x:auto}

@@ -1,0 +1,48 @@
+/* 
+
+Clip-path
+
+clip-path: Es una máscara que oculta partes de una caja
+    circle(): dibuja un círculo, puede tener una medida fija, circle(100px) o podemos especificar un centro con at, circle(100px at medidaX medidaY | palabrasClaveX palabrasClaveY)
+    ellipse(): dibuja una elipse, funciona igual que el círculo, pero en este caso tenemos que especificar 2 centros, el horizontal y el vertical
+    inset(): dibuja un borde transparente por dentro de la caja
+        inset(all| Y X | top X bottom | top left bottom right)
+        existe la opción de redondear las esquinas, para ello después de los valores de inset pondremos round
+        inset(*** round all | 
+            top-left & bottom-right top-right & bottom-left |
+            top-left top-right & bottom-left bottom-right
+            top-left top-right bottom-right bottom-left
+        )
+    polygon(): Especifica una serie de puntos (mínimo 3) para definir la zona visible siendo el punto 0 0 la esquina superior izquierda
+    los puntos se especifican por parejas de ejeX y ejeY separados por comas
+    polygon(0 0, 100% 0, 0 100%)
+    Generador de clip-path: https://bennettfeely.com/clippy/
+
+*/
+
+body {
+    background-color: #333;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box__item {
+    width: 400px;
+    height: 400px;
+    background-color: lightcoral;
+    /*clip-path: circle(100px at 0 0);*/
+    /*clip-path: ellipse(100px 50px at top);*/
+    /*clip-path: inset(20px round 20px 50px);*/
+    /*clip-path: polygon(0 0, 100% 0, 0 100%);*/
+    /*clip-path: polygon(50% 0, 0 100%, 100% 100%);*/
+    /*clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 25% 75%);*/
+    /*clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);*/
+    /*clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);*/
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}

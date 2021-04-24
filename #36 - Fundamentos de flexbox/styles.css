@@ -1,0 +1,19 @@
+/*  
+
+Fundamentos de Flexbox
+
+- Flexbox es un modelo de layauot que permite que las cajas sean flexibles, es un valor de la propiedad display
+- Existen display:flex y display:inline-flex para que el contenedor sea en bloque o en línea respectivamente
+- Se necesita un contenedor (flex-container) y almenos un hijo (flex-item)
+- Las cajas flexibles son los items, el contenedor es el contexto al que pertenecen los items
+
+Cuando se asigna la propiedad display:flex o display:inline-flex a un contenedor, hay ciertas cosas qie ocurren
+internamente:
+
+    - Se generan dos ejes que premiten colocar y alinear elementos
+    - Por defecto, el eje principal va a ser horizontal y de izquierda a derecha y eje secundario va a ser
+      vertical y de arriba a abajo
+    - Se pueden intercambiar los ejes y la dirección de ambos
+    
+
+*/

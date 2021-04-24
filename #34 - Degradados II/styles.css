@@ -1,0 +1,31 @@
+/* 
+
+Degradados II
+
+
+*/
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    border: 4px solid dodgerblue;
+    /*background-image: linear-gradient(45deg, 
+                                    blue 25%,
+                                    red 25% ,
+                                    red 50%,
+                                    blue 50%,
+                                    blue 75%,
+                                    red 75%);*/
+    /*background-image: repeating-linear-gradient(80deg,
+                                                red 0,
+                                                red 10px,
+                                                blue 10px,
+                                                blue 20px);*/
+    background-image: repeating-radial-gradient(circle 20px,
+                                                red 0,
+                                                red 10px,
+                                                blue 10px,
+                                                blue 20px);
+    /*background-size: 30px 30px;*/
+}
