@@ -1,0 +1,78 @@
+/*
+    Alineamiento y Order
+
+   Alineamiento:
+    justify-items: Alinea los elementos horizontalmente respecto a la celda
+    align-items: Alinea los elementos verticalmente respecto a la celda
+    Admiten los valores:
+        start
+        end
+        center
+        stretch (default)
+    place-items: Engloba las propiedades justify-items y align-items
+      place-items: align-items justify-items
+    justify-content: Alinea los elementos horizontalmente respecto al contenedor
+    align-content: Alinea los elementos verticalmente respecto al contenedor
+    Admiten los valores:
+        start
+        end
+        center
+        stretch (default)
+        space-around
+        space-between
+        space-evenly
+    place-content: align-content justify-content
+    Tenemos las mismas propiedades con self para los items:
+        justify-self
+        align-self
+        place-self
+        Admite los valores:  
+            start
+            end
+            center
+            stretch
+    order: Funciona igual que en flexbox, por defecto todos los items tienen order:0
+*/
+
+body {
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    font-family: sans-serif;
+    height: 100vh;
+    color: white;
+} 
+
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    height: 80vh;
+    border: 2px solid yellow;
+    grid-template-columns: repeat(3, 1fr);
+    /*justify-items: center;
+    align-items: center;*/
+    /*place-items: center end;*/
+    /*justify-content: space-evenly;*/
+    /*align-content: center;*/
+    /*place-content: center end;*/
+    
+    /*align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;*/
+}
+ 
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.grid-item:nth-child(2) {
+    /*align-self: start;
+    justify-self: start
+    place-self: start center;*/
+    background-color: royalblue;
+    order: -1;
+}
+

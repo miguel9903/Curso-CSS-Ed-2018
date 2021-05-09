@@ -1,0 +1,73 @@
+/*
+    Implicit y explicit grid
+
+    Explicit grid:
+        Es el grid que declaramos, tanto con grid-template-columns como con grid-template-rows.
+    Implicit grid:
+        Es el grid que no declaramos, los items que quedan fuera del explicit grid.
+    grid-auto-columns:
+        Establece qué hacer con las columnas no definidas.
+    grid-auto-rows:
+        Establece qué hacer con las filas no definidas.
+    
+    grid-auto-flow:
+        Establece la dirección en la cual se va a pintar el implicit grid. Admite 3 valores: 
+            row(default): Se crearán filas adicionales.
+            column: Se crearán columnas adicionales.
+            dense: Establece qué hacer con los huecos que queden.
+*/
+
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-flow: column dense;
+
+    /*grid-auto-columns: 150px;
+    grid-auto-flow: column;*/
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: span 3;
+    grid-row: 2 / 4;
+    background-color: purple;
+}
+
+.grid-item:nth-child(3) {
+    background-color: orange;
+    grid-column: 2 / 6;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: span 5;
+    grid-row: span 2;
+    background-color: peru; 
+}
+
+.grid-item:last-child {
+  grid-column: span 3;
+  grid-row: span 3;
+  background-color: royalblue;
+}
