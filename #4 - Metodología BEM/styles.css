@@ -1,43 +1,90 @@
-/* Metodología BEM (Block Element Modifier) 
+/* 
 
-Una metodología en CSS es una serie de consejos para estructurar
-nuestras clases de forma sencilla, escalable y reutilizable
+Metodología BEM (Block Element Modifier) 
+
+Una metodología en CSS es un conjunto de reglas que nos permiten crear código más organizado, entendible y 
+limpio. En particular, BEM nos va a ayudar a crear componentes reutilizables, código  mucho mas claro, y a 
+mantener la especificidad al mínimo, esto para evitar conflictos de estilo. 
+
+BEM nos indica cómo estructurar nuestras clases de forma sencilla, escalable y reutilizable.
 
 BEM es una de las metodologías mas utilizadas en el mundo
 
 Su nombre proviene de las siglas Block, Element, Modifier
 
-    - Block: Es cualquier elemento autónomo y aislado de nuestro documento.
-             Ej: Un menú, una galería, un formulario, etc.
-    - Element: Es cada uno de los elementos del bloque. Ej: Un link, una foto,
-             un campo de texto, etc.
-    - Modifier: Cuando un bloque se repite en otro lugar de nuestra web pero
-            con alguna modificación. Ej: El color de un texto, tamaño de 
-            una fuente, etc.
+    - Block:   Es cualquier elemento autónomo y aislado de nuestro documento.
+               Son las pertes independientes y reutilizables de nuetra web.
+               Ejemplo: Un menú, una galería, un formulario, un botón, la publicación
+                        dde una red social, una tarjeta, etc.
+
+    - Element: Son cada una de las pertes de un bloque. Los elementos no tienen sentido
+               por si solos, sino que, forman parte de un bloque.
+               Ejemplo: Un link, una foto, un campo de texto, etc.
+
+    - Modifier: Cuando un bloque o elemento se repite en otro lugar de nuestra web pero
+                con alguna modificación. 
+                Ejemplo: El color de un texto, tamaño de  una fuente, etc.
             
             
 ----------------- Sintaxis de BEM -----------------       
 
+En BEM, todo se nombra mediante clases.
+
 Los bloques se suelen denominar con una sola palabra o con dos palabras
 separadas por un guión si puede existir conflictos de estilos
 
-Ej: 
+Ejemplos: 
     .menu / .main-menu
     .gallery / .main-gallery
 
 Los elementos se nombran con el nombre del bloque al que pertenecen y
 su nombre seguido de dos guiones bajos __
 
-Ej:
+Ejemplos:
     .menu__item / main-menu__link
     .gallery__img / main-gallery__item
 
-Los modificadores se nombran con el nombre del bloque al que pertenecen y
-su modificador seguido de dos guiones medios --
+Los modificadores sirven para cambiar la apariencia o comportamiento de los
+bloques o elementos. Generalmente, se utilizan para diferenciar las distintas 
+variantes de un bloque o un elemento.
 
-Ej:
+Se nombran con el nombre del bloque o elemento, seguido de dos guiones medios --
+y a continuacion el nombre del modificador.
+
+Ejemeplos:
+    .button--primary
     .menu__item--active
     .gallery__item--special
+
+
+----------------- Errores comúnes en BEM -----------------    
+
+1. Confundir bloque con elemento:
+
+    Ante la duda, nos podemos hacer la siguiente pregunta: ¿Este trozo de mi página web se 
+    podriá usar por si mismo?. Si es asi, se trata de un bloque. Por el contrario, si ese trozo 
+    depende de otro o no tiene sentido por si mismo, seguramente sea un elemento.
+
+2. No existen subelementos:
+
+    En BEM, no existe el concepto de subelementos, es decir, un bloque puede contener elementos, 
+    pero un elemento no puede contener más subpartes o subelementos. Por tanto, no se puede especificar
+    una clase como la siguiente: 
+
+        .bloque__elemento__subelemento
+
+    En estos casos, lo que se hace es crear otro elemento u otro bloque.
+
+3. Usar modifcadores sin un bloque o elemento:
+
+    Las clases modificadoras no tienen sentido que aparezcan solas, ya que lo hacen es
+    modificar bloques o elementos que ya exsten. Por tanto, siempre deben acompañar a una clase
+    bloque o a una clase elemento
+
+    Ejemplo:
+
+    class="button--primary"         --> Incorrecto
+    class="button button--primary"  --> Correcto
 
 */
 
