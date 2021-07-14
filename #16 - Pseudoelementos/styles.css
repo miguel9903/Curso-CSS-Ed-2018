@@ -53,3 +53,6 @@ Existen 5 pseudolementos:
 }
 
 
+.contact-form:focus {
+    border: 1px solid dodgerblue;
+}

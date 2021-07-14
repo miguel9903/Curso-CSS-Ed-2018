@@ -1,9 +1,77 @@
-/* Selectores en CSS */
+/* 
+
+Selectores en CSS 
+
+Los selectores sirven para especificar sobre qué elemento(s) se van a aplicar estilos.
+
+Seelectores básicos:
+
+ - Selector de etiqueta:
+        Selecciona todos los elementos que coinciden con el nombre de la etiqueta o 
+        elemento especificado.
+        Sintaxis: nombre_etiqueta
+        Ejemplo: h2 se aplicará a cualquier elemento <h2>.
+
+ - Selector de clase:
+        Selecciona todos los elementos que tienen el atributo class especificado.
+        Sintaxis: nombre_clase
+        Ejemplo: .parrafo seleccionará cualquier elemento que tenga la clase "parrafo".
+ 
+ - Selector de ID:
+        Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un
+        elemento con un determinado ID dentro de un documento. (No se recomienda para dar estilos).
+        Sintaxis: #nombre_id
+        Ejemplo: #box1 se aplicará a cualquier elemento que tenga el ID "box1".
+
+ - Selector universal:
+        Selecciona todos los elementos del documento.
+        Sintaxis: *
+        Ejemplo: * se aplicará a todos los elementos del documento.
+
+ - Selector de atributo:
+        Selecciona elementos basándose en el valor de un determinado atributo.
+        Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+        Ejemplo: a[href] seleccionará todos los elementos <a> que tengan el atributo "href" establecido (con
+        cualquier valor).
 
 
-/* ---------- Selectores básicos ---------- */
+Selectores combinadores:
 
-/* 1. Selector de etiqueta */
+    - Selector de hermano adyacente:
+
+        Selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento  sigue directamente 
+        al primero y ambos comparten el mismo elemento padre.
+        Sintaxis: A + B
+        Ejemplo: La regla h2 + p se aplicará a todos los elementos <p> que siguen directamente a un 
+        elemento <h2>.
+
+    - Selector de hermano general
+
+        Selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente 
+        de forma inmediata) y ambos comparten el mismo elemento padre.
+        Sintaxis: A ~ B
+        Ejemplo: La regla p ~ span se aplicará a todos los elementos <span> que siguen un elemento <p>.
+
+    - Selector descendente:
+
+        Selecciona los elementos que son descendientes del primer elemento.
+        Sintaxis: A B
+        Ejemplo: La regla div span se aplicará a todos los elementos <span> que están dentro de un 
+        elemento <div>.
+
+
+    - Selector de hijo directo:
+
+        Selecciona los elementos que son hijos directos del primer elemento, es decir, que no
+        estén dentro de otros elementos.
+        Sintaxis: A > B
+        Ejemplo: La regla ul > li se aplicará a todos los elementos <li> que son hijos directos de un 
+        elemento <ul>.
+
+*/
+
+/* ------ Selector de etiqueta ------ */
+
 p {
     color: red;
 }
@@ -13,7 +81,8 @@ h1 {
 }
 
 
-/* 2. Selector de clase */
+/* ------ Selector de clase ------ */
+
 .title {
     color: green;
 }
@@ -23,9 +92,8 @@ h1 {
 }
 
 
-/* 2. Selector de ID 
-   (No se recomiendan nunca para dar estilos) 
-*/
+/* ------ Selector de ID ------ */
+
 #title {
     color: aqua;
 }
@@ -35,19 +103,19 @@ h1 {
 }
 
 
-/* 2. Selectores universales 
-      (Recomendados solo para resetear los estilos del navegador) 
-*/
+/* ------ Selector universal ------ */
+
 /** {
     color: red;
 }*/
 
 
-/* Selector de atributo
-   Selecciona los elementos que tienen ese atributo */
+/* ------ Selector de atributo ------ */
+
 [href] {
     color: green;
 }
+
 
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y ese valor */
@@ -55,11 +123,13 @@ h1 {
     color: red;
 }
 
+
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y almenos ese valor una vez */
 [class~="verde"] {
     color: green;
 }
+
 
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y exactamente ese valor o empiece
@@ -68,17 +138,20 @@ h1 {
     color: blue;
 }
 
+
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y empiezan por ese valor */
 [class^="rojo"] {
     color: purple;
 }
 
+
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y terminan por ese valor */
 [class$="rojo"] {
     color: steelblue;
 }
+
 
 /* Selector de atributo
    Selecciona los elementos que tienen ese atributo y contengan ese valor */
@@ -87,11 +160,8 @@ h1 {
 }
 
 
+/* ------ Selector de hermano adyacente ------ */
 
-/* ---------- Selectores combinadores ---------- */
-
-/* Selector de hermano adyacente
-   Selecciona a un elemento hermano que esté justo debajo */
 h1 + h2 {
     color: red;
 }
@@ -100,22 +170,23 @@ h2 + h2 {
     color: blue;
 }
 
-/* Selector de hermano general
-   Selecciona alos elementos que estén por debajo de él y que compartan un mismo padre, 
-   independientemente del orden */
+
+/* ------ Selector de hermano general ------ */
+
 h2 ~ h3 {
     color: green;
 }
 
-/* Selector descendente
-   Selecciona a todos los elementos que desciendan o sean hijos de él */
+
+/* ------ Selector descendente ------ */
+
 div span {
     color:blue;
 }
 
-/* Selector de hijo directo
-   Selecciona a todos los elementos que son hijos directos de él, es decirm, que no
-   estén dentro de otras etiquetas */
+
+/* ------ Selector de hijo directo ------ */
+
 p > span {
     color: blueviolet;
 }

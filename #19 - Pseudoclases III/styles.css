@@ -132,3 +132,15 @@ Negation
 .paragraph:not(.first) {
     background-color: mediumorchid;
 }
+
+:nth-child(even) {
+
+}
+
+:nth-child(odd) {
+
+}
+
+:nth-child(2n+1) {
+
+}
