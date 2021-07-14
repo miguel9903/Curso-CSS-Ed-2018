@@ -10,8 +10,6 @@ Si el elemento no tiene dimensiones declaradas, sus dimensiones se ajustarán al
 
 Su punto de referencia no se modifica aunque se mueva el elemento
 
-Cuando hacemos scroll, el elemento no se moverá, se queda fijado
-
 El elemento se va a comportar como position relative hasta que llegue a la posición que le indiquemos
 Por ejemplo, si colocamos top: 20px, significa que cuando el elemento esté a 20px del top, automáticamente
 va a cambiar a position fixed
