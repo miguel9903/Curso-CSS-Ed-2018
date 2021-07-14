@@ -2,7 +2,10 @@
 
 Pseudoelementos
 
-Se utiliza para dar estilos a partes específicas de un elemento
+Se utilizan para dar estilos a partes específicas de un elemento.
+
+Se llaman pseudoelementos porque permiten insertar contenido en la página, como si fueran elementos del propio HTML, 
+no obstante, no existen en el HTML y, por consecuencia, no existen en el DOM.
 
 Sintaxis:
 
@@ -19,7 +22,7 @@ Existen 5 pseudolementos:
     - ::before
     - ::after
 
-     Para los pseudoelementos ::afet y ::before, se debe tener
+     Para los pseudoelementos ::after y ::before, se debe tener
      en cuenta los siguiente:
 
         - La propiedad content es obligatoria
@@ -27,6 +30,10 @@ Existen 5 pseudolementos:
         - Son hijos del elemento al que pertenecen
         - Son elementos que no existen en el HTML y, por consecuencia,
           no existen en el DOM
+
+     Se pueden utilizar los pseudoelementos ::before y ::after para imprimir contendido o para utilizarlos como 
+     “divs” vacíos y hacer todo tipo de diseños, adornos, etc., en pocas palabras, agregar contenido estético a 
+     un elemento.
 
 */
 
