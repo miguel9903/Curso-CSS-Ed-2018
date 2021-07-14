@@ -3,14 +3,16 @@
 Pseudoclases III
 
 Structural
-    :root - Representa la raiz del documento (html) usando una pseudoclase tenemos más especificidad que si usáramos html
+    :root - Representa la raiz del documento (html) usando una pseudoclase tenemos más especificidad que si 
+    usáramos html
     :empty - Esta pseudoclase se aplica para los elementos vacios, es decir, etiquetas que no tienen contenido
     
     -child
         :first-child - Selecciona al primer hijo (independientemente del tipo de etiqueta)
         :last-child - Selecciona al ultimo hijo (independientemente del tipo de etiqueta)
         :nth-child(n) - Selecciona al hijo n(independientemente del tipo de etiqueta)
-        :nth-last-child(n) Selecciona al hijo n empezando a contar desde el último (independientemente del tipo de etiqueta)
+        :nth-last-child(n) - Selecciona al hijo n empezando a contar desde el último (independientemente del 
+        tipo de etiqueta)
         :only-child Selecciona al hijo unico(independientemente del tipo de etiqueta)
     
     -type
@@ -19,6 +21,7 @@ Structural
         :nth-of-type()
         :nth-last-of-type()
         :only-of-type
+        
     Valores posibles:
         odd - Impares
         even - Pares
