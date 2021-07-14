@@ -2,9 +2,11 @@
 
 Position relative 
 
-El valor relative hace que el elemento de coloque respecto a su posición en el flujo
+El valor relative hace que el elemento de coloque respecto a su posición inicial en el flujo
 
-Al mover el elemento (top, right, bottom, left), este conserva su espacio reservado
+Al mover el elemento (top, right, bottom, left), este conserva su espacio reservado.
+
+El elemento conserva sus dimensiones
 
 Su punto de referencia no se modifica aunque se mueva el elemento
 
