@@ -1,15 +1,12 @@
 /* Especificidad, herencia y cascada 
 
 
-Herehcia: Se aplica con el valor inherit y obliga al elemento a
-          heredar la propiedad de su elemento mas cercado
+Herehcia: Se aplica con el valor inherit y obliga al elemento a heredar la propiedad de su elemento mas cercano.
 
-Cascada: Es el orden en el que se aplican los estilos al leer
-         el CSS. Los estilos que vienen después sobreescriben
-         a los anteriores
+Cascada: Es el orden en el que se aplican los estilos al leer el CSS. Los estilos que vienen después sobreescriben
+         a los anteriores.
 
-Especificidad: Es el peso que tiene un selector cuando se 
-         presenta un conflicto de estilos
+Especificidad: Es el peso que tiene un selector cuando se presenta un conflicto de estilo.
 
          La w3c divide la expecificidad en:
 
@@ -19,16 +16,20 @@ Especificidad: Es el peso que tiene un selector cuando se
             - Estilos en linea      ------------> 1 0 0 0
             - Important             ------------> Le gana a todo!
 
-La especificidad entra en juego cuando hay conflictos de estilo
-y no se pueden resolver por cascada.  La especificidad gana a la cascada,
-pero, en el caso de que los selectores sean iguales, no se tiene en 
-cuenta la especificidad. 
+Los conflictos en CSS se intentan resolver primero por especificidad, es decir, se tiene en 
+cuenta el peso del selector para decidir cuál estilo aplicar. En caso de que los selectores
+tengan el mismo peso, entra en juego la cascada para resolver los conflictos de estilo.
 
-Tener 2 elementos con !importanr es lo mismo que si los dos no
-los tuvieran
+La especificidad entra en juego cuando hay conflictos de estilo y no se pueden resolver por 
+cascada. La especificidad gana a la cascada, pero, en el caso de que los selectores sean iguales,
+no se tiene en cuenta la especificidad. 
 
 Orden en el que se resuelven los conflictos de estilo:
     important ---> Especificiddd ---> Cascada
+
+NOTAS: Tener 2 elementos con !importanr es lo mismo que si los dos no los tuvieran.
+       Nunca se debe usar !important para resolver conflictos de estilo.
+
 */
 
 
