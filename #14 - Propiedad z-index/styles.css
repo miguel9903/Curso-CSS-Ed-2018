@@ -1,6 +1,6 @@
 /*  
 
-z-index
+Propiedad z-index
 
 Nos permite modificar el orden de las capas en el eje z (profundidad)
 
@@ -13,7 +13,7 @@ Si el padre tiene z-index declarado, no podemos poner a un hijo por encima
 El valor por defecto de z-index es 0
 
 
-Para poder poner un elemento hijo por encima de su elemento padre utiliando z-index, 
+Para poder poner un elemento hijo por encima de su elemento padre utilizando z-index, 
 se deben cumplir las siguientes condiciones:
 
     - El padre NO debe tener un z-index declarado
