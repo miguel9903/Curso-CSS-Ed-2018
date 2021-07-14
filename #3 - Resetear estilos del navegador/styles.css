@@ -1,3 +1,23 @@
+/* 
+
+Resetear estilos de los navegadores
+
+Por defecto, los navegadores como Google Chrome, Mozilla Firefox o Safari aplican ciertos estilos CSS a los
+elementos HTML, especificando valores para propiedades como tamaño de letra, margenes, especiados, colores, etc.
+
+Para tener un control completo sobre los estilos de nuestros documentos y evitar que se apliquen aquellos
+que no deseamos, es recomandable resetear los estilos por defecto de los navegadores. Para ello, se pueden 
+utlizar hojas de estilos existentes, diseñadas espeficicamente con ese objetivo.
+
+Una de las mas populares es Normalize CSS: https://necolas.github.io/normalize.css/
+
+Para utilizarla, simplemente la descargamos y la insertamos en nuestro HTML como una hoja de estilo más,
+a través de la etiqueta <link> dentro del <head>
+
+NOTA: Colocar la hoja de estilos Normalize antes de nuestra propia hoja de estilos.
+
+*/
+
 .square {
     width: 100px;
     height: 100px;
