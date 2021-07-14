@@ -2,7 +2,7 @@
 
 Position absolute
 
-El valor relative hace que el elemento de coloque respecto a su contenedor posicionado mas cercano, si
+El valor absolute hace que el elemento de coloque respecto a su contenedor posicionado mas cercano, si
 no encuentra ninguno, será el viewport (el espacio visible en la pantalla)
 
 El elemento no conserva su espacio en el flujo
