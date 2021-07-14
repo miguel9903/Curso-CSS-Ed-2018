@@ -1,22 +1,31 @@
- /*  Box model 
+ /*  
  
- En la web todo son cajas y la forma en la que el navegador las dibuja
- se le conoce como LAYOUT
-
- Las propiedades principales de cda una de estas cajas son: ancho(width)
- y height(alto)
+ Box model 
  
-Existen dos tipos de elementos en HTML: elementos en linea(inline) y
-de bloque(block). Estas propiedades se puedenn modificar con el 
-atributo display
+ En la web todo son cajas y la forma en la que el navegador las dibuja se le conoce como LAYOUT. Las propiedades 
+ principales de cada una de estas cajas son: ancho(width) y height(alto). Comprender el comportamiento de estas cajas 
+ es clave para poder crear diseños con CSS o para alinear elementos con otros elementos.
+ 
+ Existen dos tipos de elementos en HTML: elementos en linea(inline) y de bloque(block). Esto se puede modificar 
+ con la propiedad display.
 
-    - Elementos inline:
-        Son elementos que solo ocupan su contenido
-        No se les puede modificar ni su alto ni su ancho 
+    Si una caja se define como un bloque, se comportará de las maneras siguientes:
 
-     - Elementos block:
-        Son elementos que ocupan todo el ancho disponible
-        Se les puede asignar ato y ancho 
+        - La caja fuerza un salto de línea al llegar al final de la línea.
+        - La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible 
+          que haya en su contenedor. En la mayoría de los casos, esto significa que la caja será tan 
+          ancha como su contenedor, y llenará el 100% del espacio disponible.
+        - Se respetan las propiedades width y height
+        - Se le puede asignar ato y ancho. 
+        - El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.
+
+    Si una caja tiene una visualización externa de tipo inline, entonces:
+
+        - La caja no fuerza ningún salto de línea al llegar al final de la línea.
+        - Las propiedades width y height no se aplican.
+        - No se le puede asignar ato y ancho.
+        - Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.
+        - Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.
 
  */
 
