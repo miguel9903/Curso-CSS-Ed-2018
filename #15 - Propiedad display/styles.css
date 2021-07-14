@@ -2,7 +2,10 @@
 
 Propiedad display
 
-Nos permite definir cómo se comporta una caja respecto a las cajas adyacentes
+La propiedad display sirve para modificar el tipo de visualización (interna o externa) de un elemento. 
+El tipo de visualización externa hace referencia al elemento en sí, y especifica como se comportará y 
+visualizará el elemento respecto al flujo del documento y respecto a los demás elementos a su alrededor. 
+El tipo de visualización interna hace referencia a cómo se comportarán y visualizarán los hijos del elemento.
 
 De forma natural, existen elementos en línea y elementos en bloque
 
@@ -14,7 +17,7 @@ De forma natural, existen elementos en línea y elementos en bloque
               dimensiones (width y height). Admite margin y padding y 
               afecta el flujo vertical
 
-Los valores de la propiedad display son::after
+Los valores de la propiedad display son:
 
     - inline: Establece que la caja se comporte como un elemento en línea
     - block:  Establece que la caja se comporte como un elemento en bloque
@@ -27,10 +30,11 @@ Los valores de la propiedad display son::after
     - list-item: Imita el comportamiento de una lista
 
 
-    CSS3
+   Adicionalmente existen dos valores mas que llegaron con el estándar CSS3, que permite definir cómo se 
+   comportarán y visualizarán los hijos del elemento:
 
     - flex: Maquetar componentes
-    - grid: Mauqetar layout
+    - grid: Maquetar layout
 
 
 */
