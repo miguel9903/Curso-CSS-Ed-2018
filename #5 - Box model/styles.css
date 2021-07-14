@@ -2,12 +2,16 @@
  
  Box model 
  
- En la web todo son cajas y la forma en la que el navegador las dibuja se le conoce como LAYOUT. Las propiedades 
- principales de cada una de estas cajas son: ancho(width) y height(alto). Comprender el comportamiento de estas cajas 
+ En la web todo son cajas y la forma en la que el navegador las dibuja se le conoce como LAYOUT. Estas cajas tienen
+ cierto comportamiento y propiedades que debemos conocer y que podemos modificar. Comprender el comportamiento de estas cajas 
  es clave para poder crear diseños con CSS o para alinear elementos con otros elementos.
+
+ Las propiedades principales de cada una de estas cajas son: ancho(width) y height(alto). 
  
  Existen dos tipos de elementos en HTML: elementos en linea(inline) y de bloque(block). Esto se puede modificar 
  con la propiedad display.
+
+ Características de los elementos en línea y en bloque
 
     Si una caja se define como un bloque, se comportará de las maneras siguientes:
 
@@ -22,6 +26,7 @@
     Si una caja tiene una visualización externa de tipo inline, entonces:
 
         - La caja no fuerza ningún salto de línea al llegar al final de la línea.
+        - Las dimensiones de la caja estarán dadas por su contenido.
         - Las propiedades width y height no se aplican.
         - No se le puede asignar ato y ancho.
         - Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.
